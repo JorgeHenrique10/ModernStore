@@ -1,0 +1,12 @@
+C:\dev\ModernStore\ModernStore.Shared\bin\Debug\net5.0\ModernStore.Shared.deps.json
+C:\dev\ModernStore\ModernStore.Shared\bin\Debug\net5.0\ModernStore.Shared.dll
+C:\dev\ModernStore\ModernStore.Shared\bin\Debug\net5.0\ref\ModernStore.Shared.dll
+C:\dev\ModernStore\ModernStore.Shared\bin\Debug\net5.0\ModernStore.Shared.pdb
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.AssemblyInfoInputs.cache
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.AssemblyInfo.cs
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.csproj.CoreCompileInputs.cache
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.dll
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ref\ModernStore.Shared.dll
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.pdb
+C:\dev\ModernStore\ModernStore.Shared\obj\Debug\net5.0\ModernStore.Shared.csprojAssemblyReference.cache

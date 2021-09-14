@@ -1,0 +1,15 @@
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ModernStore.Domain.deps.json
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ModernStore.Domain.dll
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ref\ModernStore.Domain.dll
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ModernStore.Domain.pdb
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ModernStore.Shared.dll
+C:\dev\ModernStore\ModernStore.Domain\bin\Debug\net5.0\ModernStore.Shared.pdb
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.csprojAssemblyReference.cache
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.AssemblyInfoInputs.cache
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.AssemblyInfo.cs
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.csproj.CoreCompileInputs.cache
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.csproj.CopyComplete
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.dll
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ref\ModernStore.Domain.dll
+C:\dev\ModernStore\ModernStore.Domain\obj\Debug\net5.0\ModernStore.Domain.pdb
