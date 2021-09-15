@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mHTGYaovNON3hDktnHZdMc/PJjRw0ryLObCllXnlUGQqh6h8OZ5vmDed727yPosCWFZg8EdfYOo5C3yFD5KV+Q==",
+  "dgSpecHash": "WkLH3P81jJdbYwAhMbiAAF2mKk9BGju6G76XDyU/m22QjzZSp+h97JfmnSTDRBYbYRSp+3S12IVmm5dmr4LiPA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj",
+  "projectFilePath": "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ints\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512"
+    "/Users/rick/.nuget/packages/flunt/1.0.4/flunt.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }

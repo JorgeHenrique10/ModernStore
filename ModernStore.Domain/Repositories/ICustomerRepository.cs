@@ -7,5 +7,9 @@ namespace ModernStore.Domain.Repositories
     {
         Customer Get(Guid id);
         Customer GetByUserId(Guid id);
+        Customer GetByDocument(string document);
+        void Update(Customer customer);
+        void Save(Customer customer);
+        bool DocumentExits(string document);
     }
 }

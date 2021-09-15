@@ -52,19 +52,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ints\\.nuget\\packages\\": {}
+    "/Users/rick/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj",
+      "projectUniqueName": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj",
       "projectName": "ModernStore.Domain",
-      "projectPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj",
-      "packagesPath": "C:\\Users\\ints\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\obj\\",
+      "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj",
+      "packagesPath": "/Users/rick/.nuget/packages/",
+      "outputPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ints\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/rick/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -76,8 +76,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj": {
-              "projectPath": "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj"
+            "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj": {
+              "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj"
             }
           }
         }
@@ -112,7 +112,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

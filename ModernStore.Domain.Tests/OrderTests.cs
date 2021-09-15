@@ -11,7 +11,7 @@ namespace ModernStore.Domain.Tests
         [TestMethod]
         public void Dado_um_produto_fora_de_estoque_retorne_uma_notificacao()
         {
-            var User = new User("jorgehenrique", "123456");
+            var User = new User("jorgehenrique", "123456", "123456");
             var Nome = new Name("Jorge", "Henrique");
             var Email = new Email("email@email.com");
             var Document = new Document("01877122556");
@@ -32,7 +32,7 @@ namespace ModernStore.Domain.Tests
         [TestMethod]
         public void Dado_um_produto_em_estoque_deve_fazer_um_decremento_em_QuantityOnHand()
         {
-            var User = new User("jorgehenrique", "123456");
+            var User = new User("jorgehenrique", "123456", "123456");
             var Nome = new Name("Jorge", "Henrique");
             var Email = new Email("email@email.com");
             var Document = new Document("01877122556");

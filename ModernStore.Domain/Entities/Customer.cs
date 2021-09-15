@@ -29,6 +29,15 @@ namespace ModernStore.Domain.Entities
             Email = email;
         }
 
+        public void UpdateName(Name name)
+        {
+            Name = name;
+        }
+        public void UpdateEmail(Email email)
+        {
+            Email = email;
+        }
+
         public void Validate()
         {
             Name.Validate();

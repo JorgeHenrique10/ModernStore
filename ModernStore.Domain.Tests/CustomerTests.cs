@@ -12,7 +12,7 @@ namespace ModernStore.Domain.Tests
         // [TestCategory("Customer - New Customer")]
         public void Dado_um_FirstName_invalido_deve_retornar_uma_notificacao()
         {
-            var User = new User("jorgehenrique", "123456");
+            var User = new User("jorgehenrique", "123456", "123456");
             var Nome = new Name("a", "henrique");
             var Email = new Email("email@email.com");
             var Document = new Document("01877122556");
@@ -30,7 +30,7 @@ namespace ModernStore.Domain.Tests
         [TestMethod]
         public void Dado_um_LastName_invalido_deve_retornar_uma_notificacao()
         {
-            var User = new User("jorgehenrique", "123456");
+            var User = new User("jorgehenrique", "123456", "123456");
             var Nome = new Name("jorgehenrique", "h");
             var Email = new Email("email@email.com");
             var Document = new Document("01877122556");
@@ -43,7 +43,7 @@ namespace ModernStore.Domain.Tests
         [TestMethod]
         public void Dado_um_Email_invalido_deve_retornar_uma_notificacao()
         {
-            var User = new User("jorgehenrique", "123456");
+            var User = new User("jorgehenrique", "123456", "123456");
             var Nome = new Name("jorgehenrique", "henrique");
             var Email = new Email("e");
             var Document = new Document("01877122556");
