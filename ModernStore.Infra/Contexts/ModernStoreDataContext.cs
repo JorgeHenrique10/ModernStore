@@ -3,6 +3,7 @@ using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
 using ModernStore.Domain.Entities;
 using ModernStore.Domain.ValueObjects;
+using ModernStore.Infra.Mappings;
 
 namespace ModernStore.Infra.Contexts
 {
@@ -22,30 +23,7 @@ namespace ModernStore.Infra.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder
-            .Entity<Customer>(builder =>
-            {
-                builder.OwnsOne(x => x.Document)
-                .Property(x => x.Number)
-                .HasColumnName("Number")
-                .IsRequired();
-
-                builder.OwnsOne(x => x.Email)
-                .Property(x => x.Address)
-                .HasColumnName("Address")
-                .IsRequired();
-
-                builder.OwnsOne(x => x.Name)
-                .Property(x => x.FirstName)
-                .HasColumnName("FirstName")
-                .IsRequired();
-
-                builder.OwnsOne(x => x.Name)
-                .Property(x => x.LastName)
-                .HasColumnName("LastName")
-                .IsRequired();
-
-            });
+            new CustomerMap(modelBuilder);
         }
     }
 }

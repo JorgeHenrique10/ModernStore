@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj": {}
+    "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj": {}
   },
   "projects": {
-    "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj": {
+    "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj",
+        "projectUniqueName": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj",
         "projectName": "ModernStore.Domain",
-        "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj",
-        "packagesPath": "/Users/rick/.nuget/packages/",
-        "outputPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/obj/",
+        "projectPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\ints\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rick/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ints\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj": {
-                "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj"
+              "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj": {
+                "projectPath": "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj": {
+    "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj",
+        "projectUniqueName": "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj",
         "projectName": "ModernStore.Infra",
-        "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj",
-        "packagesPath": "/Users/rick/.nuget/packages/",
-        "outputPath": "/Users/rick/Dev/ModernStore/ModernStore.Infra/obj/",
+        "projectPath": "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj",
+        "packagesPath": "C:\\Users\\ints\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\ModernStore\\ModernStore.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rick/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ints\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj": {
-                "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj"
+              "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj": {
+                "projectPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj"
               }
             }
           }
@@ -135,6 +135,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "flunt": {
+              "target": "Package",
+              "version": "[1.0.4, )"
             }
           },
           "imports": [
@@ -152,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj": {
+    "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj",
+        "projectUniqueName": "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj",
         "projectName": "ModernStore.Shared",
-        "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Shared/ModernStore.Shared.csproj",
-        "packagesPath": "/Users/rick/.nuget/packages/",
-        "outputPath": "/Users/rick/Dev/ModernStore/ModernStore.Shared/obj/",
+        "projectPath": "C:\\dev\\ModernStore\\ModernStore.Shared\\ModernStore.Shared.csproj",
+        "packagesPath": "C:\\Users\\ints\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\ModernStore\\ModernStore.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rick/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ints\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -210,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

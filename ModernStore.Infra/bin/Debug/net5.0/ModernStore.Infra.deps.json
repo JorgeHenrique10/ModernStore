@@ -15,7 +15,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "5.0.10",
           "ModernStore.Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
-          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Flunt": "1.0.4"
         },
         "runtime": {
           "ModernStore.Infra.dll": {}

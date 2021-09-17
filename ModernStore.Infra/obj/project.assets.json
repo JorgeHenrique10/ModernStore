@@ -5417,23 +5417,24 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
       "ModernStore.Domain >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10",
-      "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
+      "flunt >= 1.0.4"
     ]
   },
   "packageFolders": {
-    "/Users/rick/.nuget/packages/": {}
+    "C:\\Users\\ints\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj",
+      "projectUniqueName": "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj",
       "projectName": "ModernStore.Infra",
-      "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Infra/ModernStore.Infra.csproj",
-      "packagesPath": "/Users/rick/.nuget/packages/",
-      "outputPath": "/Users/rick/Dev/ModernStore/ModernStore.Infra/obj/",
+      "projectPath": "C:\\dev\\ModernStore\\ModernStore.Infra\\ModernStore.Infra.csproj",
+      "packagesPath": "C:\\Users\\ints\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\ModernStore\\ModernStore.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/rick/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ints\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5445,8 +5446,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj": {
-              "projectPath": "/Users/rick/Dev/ModernStore/ModernStore.Domain/ModernStore.Domain.csproj"
+            "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj": {
+              "projectPath": "C:\\dev\\ModernStore\\ModernStore.Domain\\ModernStore.Domain.csproj"
             }
           }
         }
@@ -5492,6 +5493,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
             "target": "Package",
             "version": "[1.1.0, )"
+          },
+          "flunt": {
+            "target": "Package",
+            "version": "[1.0.4, )"
           }
         },
         "imports": [
@@ -5509,7 +5514,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
