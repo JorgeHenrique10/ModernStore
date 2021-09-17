@@ -1,10 +1,8 @@
 using System;
-using Flunt.Notifications;
-using Flunt.Validations;
 
 namespace ModernStore.Shared.Entities
 {
-    public abstract class Entity : Notifiable
+    public abstract class Entity
     {
         protected Entity()
         {

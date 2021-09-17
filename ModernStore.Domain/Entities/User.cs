@@ -5,9 +5,13 @@ using ModernStore.Shared.Entities;
 
 namespace ModernStore.Domain.Entities
 {
-    public class User : Entity, IValidatable
+    public class User : Entity
     {
         private readonly string _confirmPassword;
+        public User()
+        {
+
+        }
         public User(string userName, string password, string confirmPassword)
         {
             Id = Guid.NewGuid();
@@ -42,11 +46,6 @@ namespace ModernStore.Domain.Entities
                 sbString.Append(t.ToString("x2"));
 
             return sbString.ToString();
-        }
-
-        public void Validate()
-        {
-            AddNotifications(new Contract().AreEquals(Password, _confirmPassword, "Password", "As senhas não conhecidem!"));
         }
     }
 }

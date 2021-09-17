@@ -1,12 +1,15 @@
 using System;
-using Flunt.Validations;
 using ModernStore.Domain.ValueObjects;
 using ModernStore.Shared.Entities;
 
 namespace ModernStore.Domain.Entities
 {
-    public class Customer : Entity, IValidatable
+    public class Customer : Entity
     {
+        public Customer()
+        {
+
+        }
         public Customer(Name name, DateTime birthDate, Email email, Document document, User user)
         {
             Name = name;
@@ -36,17 +39,6 @@ namespace ModernStore.Domain.Entities
         public void UpdateEmail(Email email)
         {
             Email = email;
-        }
-
-        public void Validate()
-        {
-            Name.Validate();
-            Email.Validate();
-            Document.Validate();
-
-            AddNotifications(Name.Notifications);
-            AddNotifications(Email.Notifications);
-            AddNotifications(Document.Notifications);
         }
     }
 }

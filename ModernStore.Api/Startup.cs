@@ -30,8 +30,8 @@ namespace ModernStore.Api
         {
             services.AddControllers();
 
-            //services.AddDbContext<ModernStoreDataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
-            services.AddDbContext<ModernStoreDataContext>(opt => opt.UseInMemoryDatabase("DataBase"));
+            services.AddDbContext<ModernStoreDataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
+            //services.AddDbContext<ModernStoreDataContext>(opt => opt.UseInMemoryDatabase("DataBase"));
             services.AddScoped<ModernStoreDataContext, ModernStoreDataContext>();
 
             services.AddSwaggerGen(c =>

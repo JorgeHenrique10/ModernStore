@@ -3,8 +3,12 @@ using ModernStore.Shared.Entities;
 
 namespace ModernStore.Domain.Entities
 {
-    public class OrderItem : Entity, IValidatable
+    public class OrderItem : Entity
     {
+        public OrderItem()
+        {
+
+        }
         public OrderItem(Product product, int quantity)
         {
             Product = product;
@@ -20,14 +24,5 @@ namespace ModernStore.Domain.Entities
 
         public decimal Total() => Price * Quantity;
 
-        public void Validate()
-        {
-            AddNotifications(
-                new Contract()
-                    .Requires()
-                    .IsGreaterThan(Quantity, 1, "Quantity", "Quantidade inválida")
-                    .IsGreaterThan(Product.QuantityOnHand, Quantity + 1, "Quantity", "Quantidade maior que o estoque")
-            );
-        }
     }
 }

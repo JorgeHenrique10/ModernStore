@@ -21,3 +21,4 @@ C:/dev/ModernStore/ModernStore.Shared/obj/Debug/net5.0/ModernStore.Shared.csproj
 /Users/rick/Dev/ModernStore/ModernStore.Shared/obj/Debug/net5.0/ModernStore.Shared.dll
 /Users/rick/Dev/ModernStore/ModernStore.Shared/obj/Debug/net5.0/ref/ModernStore.Shared.dll
 /Users/rick/Dev/ModernStore/ModernStore.Shared/obj/Debug/net5.0/ModernStore.Shared.pdb
+/Users/rick/Dev/ModernStore/ModernStore.Shared/obj/Debug/net5.0/ModernStore.Shared.csproj.AssemblyReference.cache

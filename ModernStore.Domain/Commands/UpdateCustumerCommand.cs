@@ -6,16 +6,18 @@ namespace ModernStore.Domain.Commands
 {
     public class UpdateCustumerCommand : Notifiable, ICommand
     {
-        public UpdateCustumerCommand(string firstName, string lastName, string email, string document, string username, string password, string confirmPassword, DateTime birthDate)
+
+        public UpdateCustumerCommand(string firstName, string lastName, string email, DateTime birthDate, string document, string username, string password, string confirmPassword)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
+            BirthDate = birthDate;
             Document = document;
             Username = username;
             Password = password;
             ConfirmPassword = confirmPassword;
-            BirthDate = birthDate;
+
         }
 
         public string FirstName { get; private set; }
@@ -26,5 +28,10 @@ namespace ModernStore.Domain.Commands
         public string Username { get; set; }
         public string Password { get; set; }
         public string ConfirmPassword { get; private set; }
+
+        public void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

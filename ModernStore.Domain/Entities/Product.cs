@@ -3,7 +3,7 @@ using ModernStore.Shared.Entities;
 
 namespace ModernStore.Domain.Entities
 {
-    public class Product : Entity, IValidatable
+    public class Product : Entity
     {
         public Product(string title, decimal price, string image, int quantityOnHand)
         {
@@ -23,9 +23,5 @@ namespace ModernStore.Domain.Entities
             QuantityOnHand -= quantity;
         }
 
-        public void Validate()
-        {
-
-        }
     }
 }

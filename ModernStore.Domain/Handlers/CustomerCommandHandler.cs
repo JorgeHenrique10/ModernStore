@@ -23,6 +23,13 @@ namespace ModernStore.Domain.Handlers
         }
         public ICommandResult Handle(RegisterCustomerCommand command)
         {
+            command.Validate();
+
+            if (command.Invalid)
+            {
+                return new GenericCommandResult(false, "Commando inválido", command.Notifications);
+            }
+
             var documentExits = _customerRepository.DocumentExits(command.Document);
 
             if (documentExits)
@@ -31,25 +38,11 @@ namespace ModernStore.Domain.Handlers
                 return new GenericCommandResult(false, "Documento inválido", null);
             }
 
-            var name = new Name(command.firstName, command.lastName);
+            var name = new Name(command.FirstName, command.LastName);
 
             var user = new User(command.Username, command.Password, command.ConfirmPassword);
 
-            user.Validate();
-
-            if (user.Valid)
-            {
-                return new GenericCommandResult(false, "Usuario invalido!", user.Notifications);
-            }
-
             var customer = new Customer(name, command.BirthDate, new Email(command.Email), new Document(command.Document), user);
-
-            customer.Validate();
-
-            if (customer.Valid)
-            {
-                return new GenericCommandResult(false, "Customer invalido!", customer.Notifications);
-            }
 
             _customerRepository.Save(customer);
 
@@ -60,6 +53,13 @@ namespace ModernStore.Domain.Handlers
 
         public ICommandResult Handle(UpdateCustumerCommand command)
         {
+            command.Validate();
+
+            if (command.Invalid)
+            {
+                return new GenericCommandResult(false, "Commando inválido", command.Notifications);
+            }
+
             var documentExits = _customerRepository.DocumentExits(command.Document);
 
             if (documentExits)
@@ -80,13 +80,6 @@ namespace ModernStore.Domain.Handlers
 
             customer.UpdateName(name);
             customer.UpdateEmail(new Email(command.Email));
-
-            customer.Validate();
-
-            if (customer.Valid)
-            {
-                return new GenericCommandResult(false, "Cliente inválido", customer.Notifications);
-            }
 
             _customerRepository.Update(customer);
 

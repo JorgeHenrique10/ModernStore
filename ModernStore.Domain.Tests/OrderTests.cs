@@ -21,10 +21,8 @@ namespace ModernStore.Domain.Tests
             var order = new Order(Customer, 8, 10);
             var item = new OrderItem(mouse, 2);
 
-            item.Validate();
-            order.Validate();
-            if (item.Valid)
-                order.AddItem(item);
+
+            order.AddItem(item);
             Console.WriteLine(order.Items.Count);
             Assert.AreEqual(0, order.Items.Count);
         }
@@ -42,10 +40,8 @@ namespace ModernStore.Domain.Tests
             var order = new Order(Customer, 8, 10);
             var item = new OrderItem(mouse, 2);
 
-            item.Validate();
-            order.Validate();
-            if (item.Valid)
-                order.AddItem(item);
+
+            order.AddItem(item);
             Console.WriteLine(order.Items.Count);
             Assert.AreEqual(18, mouse.QuantityOnHand);
         }

@@ -20,6 +20,13 @@ namespace ModernStore.Domain.Handlers
         }
         public ICommandResult Handle(RegisterOrderCommand command)
         {
+            command.Validate();
+
+            if (command.Invalid)
+            {
+                return new GenericCommandResult(false, "Documento inválido", command.Notifications);
+            }
+
             var customer = _customerRepository.Get(command.Customer);
             var order = new Order(customer, command.DeliveryFee, command.DeliveryFee);
 
@@ -29,10 +36,7 @@ namespace ModernStore.Domain.Handlers
                 order.AddItem(new OrderItem(product, item.Quantity));
             }
 
-            order.Validate();
-
-            if (order.Valid)
-                _orderRepository.Save(order);
+            _orderRepository.Save(order);
 
             return new GenericCommandResult(true, "Tarefa Salva!", order);
         }

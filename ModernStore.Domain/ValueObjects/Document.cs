@@ -1,9 +1,8 @@
-using Flunt.Notifications;
-using Flunt.Validations;
 
 namespace ModernStore.Domain.ValueObjects
 {
-    public class Document : Notifiable, IValidatable
+
+    public class Document
     {
         public Document(string number)
         {
@@ -49,12 +48,6 @@ namespace ModernStore.Domain.ValueObjects
                 cpfValido = cpf.EndsWith(digito);
             }
 
-
-            AddNotifications(
-                     new Contract()
-                         .Requires()
-                         .IsTrue(cpfValido, "Number", "CPF Invalido!")
-                 );
         }
     }
 }

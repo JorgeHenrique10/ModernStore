@@ -1,16 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Flunt.Validations;
 using ModernStore.Domain.Enums;
 using ModernStore.Shared.Entities;
 
 namespace ModernStore.Domain.Entities
 {
-    public class Order : Entity, IValidatable
+    public class Order : Entity
     {
         private readonly IList<OrderItem> _items;
 
+        public Order()
+        {
+
+        }
         public Order(Customer customer, decimal deliveryFee, decimal discount)
         {
             Customer = customer;
@@ -36,18 +39,8 @@ namespace ModernStore.Domain.Entities
 
         public void AddItem(OrderItem item)
         {
-            if (item.Valid)
-                _items.Add(item);
+            _items.Add(item);
         }
 
-        public void Validate()
-        {
-            AddNotifications(
-                new Contract()
-                    .Requires()
-                    .IsGreaterThan(DeliveryFee, 0, "DeliveryFee", "DeliveryFee inválido")
-                    .IsGreaterThan(Discount, -1, "Discount", "Discount inválido")
-            );
-        }
     }
 }

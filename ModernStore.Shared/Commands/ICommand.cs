@@ -1,6 +1,8 @@
+using Flunt.Validations;
+
 namespace ModernStore.Shared.Commands
 {
-    public interface ICommand
+    public interface ICommand : IValidatable
     {
 
     }
