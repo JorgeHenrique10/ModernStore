@@ -10,7 +10,7 @@ namespace ModernStore.Domain.Entities
     {
         private readonly IList<OrderItem> _items;
 
-        public Order()
+        protected Order()
         {
 
         }

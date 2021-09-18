@@ -6,7 +6,7 @@ namespace ModernStore.Domain.Entities
 {
     public class Customer : Entity
     {
-        public Customer()
+        protected Customer()
         {
 
         }

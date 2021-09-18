@@ -24,6 +24,11 @@ namespace ModernStore.Infra.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             new CustomerMap(modelBuilder);
+            new OrderMap(modelBuilder);
+            new OrderItemMap(modelBuilder);
+            new ProductMap(modelBuilder);
+            new UserMap(modelBuilder);
+
         }
     }
 }

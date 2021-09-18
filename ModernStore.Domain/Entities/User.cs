@@ -8,7 +8,7 @@ namespace ModernStore.Domain.Entities
     public class User : Entity
     {
         private readonly string _confirmPassword;
-        public User()
+        protected User()
         {
 
         }

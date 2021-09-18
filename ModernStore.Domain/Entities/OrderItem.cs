@@ -5,7 +5,7 @@ namespace ModernStore.Domain.Entities
 {
     public class OrderItem : Entity
     {
-        public OrderItem()
+        protected OrderItem()
         {
 
         }
