@@ -15,6 +15,7 @@ using Microsoft.OpenApi.Models;
 using ModernStore.Domain.Repositories;
 using ModernStore.Infra.Contexts;
 using ModernStore.Infra.Repositories;
+using ModernStore.Infra.Transactions;
 
 namespace ModernStore.Api
 {
@@ -37,6 +38,9 @@ namespace ModernStore.Api
             //services.AddDbContext<ModernStoreDataContext>(opt => opt.UseInMemoryDatabase("DataBase"));
             services.AddScoped<ModernStoreDataContext, ModernStoreDataContext>();
             services.AddTransient<IProductCustomerRepository, ProductCustomerRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IUow, Uow>();
 
             services.AddSwaggerGen(c =>
             {
