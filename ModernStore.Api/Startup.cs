@@ -12,7 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using ModernStore.Domain.Repositories;
 using ModernStore.Infra.Contexts;
+using ModernStore.Infra.Repositories;
 
 namespace ModernStore.Api
 {
@@ -29,10 +31,12 @@ namespace ModernStore.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors();
 
             services.AddDbContext<ModernStoreDataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("connectionString")));
             //services.AddDbContext<ModernStoreDataContext>(opt => opt.UseInMemoryDatabase("DataBase"));
             services.AddScoped<ModernStoreDataContext, ModernStoreDataContext>();
+            services.AddTransient<IProductCustomerRepository, ProductCustomerRepository>();
 
             services.AddSwaggerGen(c =>
             {
@@ -49,7 +53,12 @@ namespace ModernStore.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ModernStore.Api v1"));
             }
-
+            app.UseCors(x =>
+            {
+                x.AllowAnyHeader();
+                x.AllowAnyMethod();
+                x.AllowAnyOrigin();
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

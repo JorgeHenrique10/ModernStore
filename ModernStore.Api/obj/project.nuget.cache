@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iDHxnZE5zgUwHEEfslT6vaa4BnuUjVJB8SZE4w29RZuOB4a/Vjjr3MeX0dzwRYVLFiRcwR0tZHrD+++BFhWpOA==",
+  "dgSpecHash": "HIEPSFb9rifmghZWlc522csNB2iOHU3iR9Pwib4EUa7JITUy/LoFaolN1ifHUOWZeav8/e7AT3s3olv+akIe+Q==",
   "success": true,
   "projectFilePath": "/Users/rick/Dev/ModernStore/ModernStore.Api/ModernStore.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/rick/.nuget/packages/dapper/2.0.90/dapper.2.0.90.nupkg.sha512",
     "/Users/rick/.nuget/packages/flunt/1.0.4/flunt.1.0.4.nupkg.sha512",
     "/Users/rick/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/rick/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

@@ -6,6 +6,7 @@
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/ModernStore.Api.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/ref/ModernStore.Api.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/ModernStore.Api.pdb
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Dapper.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Flunt.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Humanizer.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
