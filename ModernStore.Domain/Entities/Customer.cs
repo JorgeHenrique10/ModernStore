@@ -16,7 +16,7 @@ namespace ModernStore.Domain.Entities
             BirthDate = birthDate;
             Email = email;
             Document = document;
-            User = User;
+            User = user;
         }
 
         public Name Name { get; private set; }

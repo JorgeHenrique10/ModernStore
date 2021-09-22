@@ -4,10 +4,10 @@ using ModernStore.Shared.Commands;
 
 namespace ModernStore.Domain.Commands
 {
-    public class UpdateCustumerCommand : Notifiable, ICommand
+    public class UpdateCustomerCommand : Notifiable, ICommand
     {
 
-        public UpdateCustumerCommand(string firstName, string lastName, string email, DateTime birthDate, string document, string username, string password, string confirmPassword)
+        public UpdateCustomerCommand(string firstName, string lastName, string email, DateTime birthDate, string document, string username, string password, string confirmPassword)
         {
             FirstName = firstName;
             LastName = lastName;

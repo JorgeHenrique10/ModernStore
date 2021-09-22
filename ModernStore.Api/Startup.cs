@@ -12,9 +12,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using ModernStore.Domain.Handlers;
 using ModernStore.Domain.Repositories;
+using ModernStore.Domain.Services;
 using ModernStore.Infra.Contexts;
 using ModernStore.Infra.Repositories;
+using ModernStore.Infra.Services;
 using ModernStore.Infra.Transactions;
 
 namespace ModernStore.Api
@@ -41,6 +44,11 @@ namespace ModernStore.Api
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<IUow, Uow>();
+
+            services.AddTransient<IEmailService, EmailService>();
+
+            services.AddTransient<CustomerCommandHandler, CustomerCommandHandler>();
+            services.AddTransient<OrderCommandHandler, OrderCommandHandler>();
 
             services.AddSwaggerGen(c =>
             {

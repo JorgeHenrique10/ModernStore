@@ -11,7 +11,7 @@ namespace ModernStore.Domain.Handlers
 {
     public class CustomerCommandHandler : Notifiable,
     ICommandHandler<RegisterCustomerCommand>,
-    ICommandHandler<UpdateCustumerCommand>
+    ICommandHandler<UpdateCustomerCommand>
     {
         public readonly ICustomerRepository _customerRepository;
         public readonly IEmailService _emailService;
@@ -51,7 +51,7 @@ namespace ModernStore.Domain.Handlers
             return new GenericCommandResult(true, "Customer cadastrado com sucesso!", customer);
         }
 
-        public ICommandResult Handle(UpdateCustumerCommand command)
+        public ICommandResult Handle(UpdateCustomerCommand command)
         {
             command.Validate();
 

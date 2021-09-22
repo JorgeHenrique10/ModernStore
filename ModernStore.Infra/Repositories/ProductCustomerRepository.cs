@@ -20,7 +20,7 @@ namespace ModernStore.Infra.Repositories
 
         public Product Get(Guid id)
         {
-            return _context.Products.AsNoTracking().FirstOrDefault(x => x.Id == id);
+            return _context.Products.FirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<ProductCustomerListCommandQuery> Get()

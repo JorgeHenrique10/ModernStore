@@ -11,7 +11,6 @@ namespace ModernStore.Infra.Mappings
             .Entity<Product>(builder =>
            {
                builder.ToTable("Products");
-               builder.HasKey(x => x.Id);
                builder.Property(x => x.Image).IsRequired().HasMaxLength(1024);
                builder.Property(x => x.Price);
                builder.Property(x => x.QuantityOnHand);
