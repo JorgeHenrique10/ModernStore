@@ -35,6 +35,11 @@ namespace ModernStore.Infra.Repositories
 
         }
 
+        public Customer GetByAuthentication(string username, string password)
+        {
+            return _context.Customers.Include(x => x.User).FirstOrDefault(x => x.User.UserName == username && x.User.Password == password);
+        }
+
         public Customer GetByDocument(string document)
         {
             return _context.Customers.Include(x => x.User).FirstOrDefault(x => x.Document.Number == document);

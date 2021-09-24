@@ -14,7 +14,6 @@ namespace ModernStore.Domain.Entities
         }
         public User(string userName, string password, string confirmPassword)
         {
-            Id = Guid.NewGuid();
             UserName = userName;
             Password = EncryptPassword(password);
             Active = true;

@@ -95,3 +95,10 @@ C:/dev/ModernStore/ModernStore.Api/obj/Debug/net5.0/ModernStore.Api.genruntimeco
 /Users/rick/Dev/ModernStore/ModernStore.Api/obj/Debug/net5.0/ref/ModernStore.Api.dll
 /Users/rick/Dev/ModernStore/ModernStore.Api/obj/Debug/net5.0/ModernStore.Api.pdb
 /Users/rick/Dev/ModernStore/ModernStore.Api/obj/Debug/net5.0/ModernStore.Api.genruntimeconfig.cache
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/rick/Dev/ModernStore/ModernStore.Api/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
